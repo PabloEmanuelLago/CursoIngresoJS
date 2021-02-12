@@ -1,7 +1,30 @@
+// 1° h Pablo Lago
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
+
+    edad = txtIdEdad.value;
+    edad = parseInt(edad);
+
+    if(edad > 17)
+
+    {
+    	alert("usted es mayor de edad");
+    }
+}
+
+
+
+
+
+
+
+	
 	
 
-}//FIN DE LA FUNCIÓN
+//FIN DE LA FUNCIÓN
+
+
+
+
+//tomo la edad

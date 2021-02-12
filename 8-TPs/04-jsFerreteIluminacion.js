@@ -1,3 +1,5 @@
+// 1°H Pablo Lago
+
 /*4.	Para el departamento de iluminación:
 Tomando en cuenta que todas las lámparas están en oferta al mismo precio de $35 pesos final.
 A.	Si compra 6 o más  lamparitas bajo consumo tiene un descuento del 50%. 
@@ -10,5 +12,57 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	var cantLamparas;
+ 	var marcasLamp;
+ 	var precioDesc;
+    var precio;
+    var descuento;
+    var mensaje;
+
+ 	cantLamparas = txtIdCantidad.value;
+ 	cantLamparas = parseInt(cantLamparas);
+
+ 	marcasLamp = Marca.value;
+
+ 	precioDesc = txtIdprecioDescuento.value;
+ 	precioDesc = parseInt(precioDesc);
+
+    precio = 35 * cantLamparas;
+    
+ 		if (cantLamparas <6)
+ 		{
+ 			mensaje = " su precio sin descuento es " + precio;
+ 			txtIdprecioDescuento.value = mensaje;
+ 		}
+ 		else 
+		{
+			descuento = precio * 50/100;		
+ 		
+
+ 		if(cantLamparas ==5)
+ 		{
+ 			if(marcasLamp == "ArgentinaLuz")
+ 		{
+ 			descuento = precio * 40/100;	
+ 		}
+ 		else
+ 		{
+ 		 	descuento = precio * 30/100;	
+ 		}
+ 		//else
+ 		
+ 		 	//if(cantLamparas==4)
+ 	}	
+ 		
+ 		    
+
+ 		precioDesc = precio - (precio * descuento/100);
+		document.getElementById("txtIdprecioDesc").value = precioDesc; 
+
 }
+
+
+
+
+
+

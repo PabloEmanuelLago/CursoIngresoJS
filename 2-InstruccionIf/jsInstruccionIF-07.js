@@ -1,7 +1,18 @@
+// 1°H Pablo Lago
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
+  var estado;
+    
+  estado = document.getElementById('estadoCivil').value;
+
+	edad = txtIdEdad.value;
+	edad = parseInt(edad);
+    
+    if (edad < 19 && estado != "Soltero" )
+   	{ 
+   	   alert(" es muy pequeño para NO ser soltero "); 
+    }
 	
 
 

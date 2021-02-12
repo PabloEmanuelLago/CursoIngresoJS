@@ -1,12 +1,20 @@
-/*
-Debemos lograr tomar un dato por 'ID'
-y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
+/* Pablo Lago 1°H
+*/
 function mostrar()
 {
-	var nombreIngresado;
-	nombreIngresado=txtIdNombre.value;
-	alert("ok");
+var nombre;
+var edad;
+
+nombre = document.getElementById('txtIdNombre').value;
+
+edad = prompt ("ingrese su edad");
+
+alert ("ud se llama " + nombre  + " y tiene "+ edad +" años" );
+//console.log("hola");
+//console.log(nombre);
+
 
 }
-
-
+//document.getElementById('txtIdNombre').value;
+//console.log("hola");
+//console.log(nombre);
